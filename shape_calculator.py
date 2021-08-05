@@ -54,10 +54,12 @@ class Square(Rectangle):
       return "Square(side=" + str(Rectangle.height)+")"
 
   def set_width(self, side):
+    Rectangle.height = side
     Rectangle.width = side
 
   def set_height(self, side):
     Rectangle.height = side
+    Rectangle.width = side
 
   def set_side(self, side):
     Rectangle.width = side
